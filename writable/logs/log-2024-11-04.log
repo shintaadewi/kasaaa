@@ -1,0 +1,232 @@
+INFO - 2024-11-04 01:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 01:56:58 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 27.
+ 1 APPPATH\Views\penjualan\detail.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(142): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:07:30 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 27.
+ 1 APPPATH\Views\penjualan\detail.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:09:13 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:10:37 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:11:21 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-11-04 02:13:30 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-11-04 02:13:31 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:13:35 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:16:41 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(138): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:21:01 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/2]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(144): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:26:16 --> ErrorException: Undefined array key "jumlah"
+[Method: GET, Route: penjualan/detail/3]
+in APPPATH\Views\penjualan\detail.php on line 28.
+ 1 APPPATH\Views\penjualan\detail.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/detail', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(144): view('penjualan/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 02:31:23 --> ErrorException: Undefined array key "kuantitas"
+[Method: POST, Route: penjualan/store]
+in APPPATH\Controllers\PenjualanController.php on line 45.
+ 1 APPPATH\Controllers\PenjualanController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kuantitas"', 'C:\\xampp\\htdocs\\Kasa\\app\\Controllers\\PenjualanController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 02:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 02:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 03:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 03:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 03:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 03:04:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "penjulan/detail.php"
+[Method: GET, Route: penjualan/detail/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('penjulan/detail.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjulan/detail', [], true)
+ 3 APPPATH\Controllers\PenjualanController.php(133): view('penjulan/detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->detail('4')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-11-04 03:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 03:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

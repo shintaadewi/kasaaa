@@ -1,0 +1,52 @@
+ERROR - 2024-12-13 01:35:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kasir', 3306, '', 0)
+#1 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Kasa\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`...', Array, false)
+#4 C:\xampp\htdocs\Kasa\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Kasa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Kasa\app\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+#8 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+#9 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Kasa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Kasa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Kasa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Kasa\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Kasa\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`...', Array, false)
+#3 C:\xampp\htdocs\Kasa\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Kasa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Kasa\app\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+#7 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+#8 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Kasa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Kasa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Kasa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\Kasa\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-12-13 01:35:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: produk]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')

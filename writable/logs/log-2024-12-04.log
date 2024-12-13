@@ -1,0 +1,582 @@
+ERROR - 2024-12-04 09:34:27 --> mysqli_sql_exception: Table 'kasa.produk' doesn't exist in C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `produk`...', 0)
+#1 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk`...')
+#2 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk`...')
+#3 C:\xampp\htdocs\Kasa\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`...', Array, false)
+#4 C:\xampp\htdocs\Kasa\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Kasa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Kasa\app\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+#8 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+#9 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Kasa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Kasa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Kasa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Kasa\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-12-04 09:34:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasa.produk' doesn't exist
+[Method: GET, Route: produk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:34:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasa.produk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:34:27 --> [Caused by] mysqli_sql_exception: Table 'kasa.produk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `produk`.*, `kategori`.`nama_kategori`
+FROM `produk`
+JOIN `kategori` ON `kategori`.`id_kategori` = `produk`.`id_kategori`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ProdukController.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProdukController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdukController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:41:43 --> Error: Class "App\Models\ObatModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\DashboardController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:44:52 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 8.
+ 1 APPPATH\Views\penjualan\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:45:01 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 8.
+ 1 APPPATH\Views\penjualan\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:45:31 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: pembelian/detail/2]
+in APPPATH\Views\pembelian\detail.php on line 9.
+ 1 APPPATH\Views\pembelian\detail.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\pembelian\\detail.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\pembelian\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembelian/detail', [], true)
+ 5 APPPATH\Controllers\PembelianController.php(176): view('pembelian/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PembelianController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembelianController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:51:19 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: pembelian/detail/2]
+in APPPATH\Views\pembelian\detail.php on line 9.
+ 1 APPPATH\Views\pembelian\detail.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\pembelian\\detail.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\pembelian\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembelian/detail', [], true)
+ 5 APPPATH\Controllers\PembelianController.php(204): view('pembelian/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PembelianController->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PembelianController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 09:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 09:52:58 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 8.
+ 1 APPPATH\Views\penjualan\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:54:00 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 14.
+ 1 APPPATH\Views\penjualan\edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:54:21 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 14.
+ 1 APPPATH\Views\penjualan\edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:54:36 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 14.
+ 1 APPPATH\Views\penjualan\edit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:55:17 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 28.
+ 1 APPPATH\Views\penjualan\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:55:49 --> ErrorException: Undefined array key "produk_id"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 28.
+ 1 APPPATH\Views\penjualan\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "produk_id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 09:56:17 --> ErrorException: Undefined array key "harga"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 36.
+ 1 APPPATH\Views\penjualan\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(79): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 09:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 10:00:23 --> ErrorException: Undefined array key "harga"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 36.
+ 1 APPPATH\Views\penjualan\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:01:35 --> ErrorException: Undefined array key "harga"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 36.
+ 1 APPPATH\Views\penjualan\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:02:12 --> ErrorException: Undefined array key "harga"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 36.
+ 1 APPPATH\Views\penjualan\edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:02:34 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 61.
+ 1 APPPATH\Views\penjualan\edit.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 61)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 10:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 10:08:51 --> ErrorException: Undefined variable $penjualan_produk
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 22.
+ 1 APPPATH\Views\penjualan\edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan_produk', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:09:42 --> ErrorException: Undefined array key "harga_satuan"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 37.
+ 1 APPPATH\Views\penjualan\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga_satuan"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:10:06 --> ErrorException: Undefined array key "harga_satuan"
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 37.
+ 1 APPPATH\Views\penjualan\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga_satuan"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(94): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:11:31 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 6.
+ 1 APPPATH\Views\penjualan\edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(87): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:12:54 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 12.
+ 1 APPPATH\Views\penjualan\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(87): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:13:40 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: penjualan/edit/4]
+in APPPATH\Views\penjualan\edit.php on line 12.
+ 1 APPPATH\Views\penjualan\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(87): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 10:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 10:13:58 --> ErrorException: Undefined variable $penjualan
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 12.
+ 1 APPPATH\Views\penjualan\edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $penjualan', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(87): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+ERROR - 2024-12-04 10:16:24 --> mysqli_sql_exception: Table 'kasir.penjualan_produk' doesn't exist in C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Kasa\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Kasa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Kasa\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Kasa\app\Models\PenjualanModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Kasa\app\Controllers\PenjualanController.php(93): App\Models\PenjualanModel->getPenjualanProduk('5')
+#6 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+#7 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+#8 C:\xampp\htdocs\Kasa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Kasa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Kasa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Kasa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\Kasa\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-12-04 10:16:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir.penjualan_produk' doesn't exist
+[Method: GET, Route: penjualan/edit/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = :id_penjualan:', [...], false)
+ 2 APPPATH\Models\PenjualanModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\PenjualanController.php(93): App\Models\PenjualanModel->getPenjualanProduk('5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:16:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir.penjualan_produk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = :id_penjualan:', [...], false)
+ 4 APPPATH\Models\PenjualanModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\PenjualanController.php(93): App\Models\PenjualanModel->getPenjualanProduk('5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:16:24 --> [Caused by] mysqli_sql_exception: Table 'kasir.penjualan_produk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penjualan_produk`
+WHERE `id_penjualan` = :id_penjualan:', [...], false)
+ 5 APPPATH\Models\PenjualanModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PenjualanController.php(93): App\Models\PenjualanModel->getPenjualanProduk('5')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:17:05 --> ErrorException: Undefined array key "harga_satuan"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Views\penjualan\edit.php on line 37.
+ 1 APPPATH\Views\penjualan\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga_satuan"', 'C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Kasa\\app\\Views\\penjualan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('penjualan/edit', [], true)
+ 5 APPPATH\Controllers\PenjualanController.php(95): view('penjualan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 10:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-04 10:19:10 --> ErrorException: Undefined array key "id_produk"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Controllers\PenjualanController.php on line 97.
+ 1 APPPATH\Controllers\PenjualanController.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_produk"', 'C:\\xampp\\htdocs\\Kasa\\app\\Controllers\\PenjualanController.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+CRITICAL - 2024-12-04 10:22:20 --> ErrorException: Undefined array key "id_produk"
+[Method: GET, Route: penjualan/edit/5]
+in APPPATH\Controllers\PenjualanController.php on line 99.
+ 1 APPPATH\Controllers\PenjualanController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_produk"', 'C:\\xampp\\htdocs\\Kasa\\app\\Controllers\\PenjualanController.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PenjualanController->edit('5')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Kasa\\public\\index.php')
+INFO - 2024-12-04 10:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-04 10:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
